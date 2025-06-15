@@ -1,0 +1,94 @@
+/* Apply to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+/* Set body background to Netflix dark theme */
+body {
+  background-color: #141414; /* Netflix background */
+  min-height: 100vh;
+}
+
+/* Default link style */
+a {
+  color: #e50914; /* Netflix red */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Common container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Netflix-style red buttons */
+.btn {
+  background-color: #e50914;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f40612;
+}
+
+/* For input and forms */
+input, textarea, select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #e50914;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Card-style content */
+.card {
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Scrollbar (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 10px;
+}

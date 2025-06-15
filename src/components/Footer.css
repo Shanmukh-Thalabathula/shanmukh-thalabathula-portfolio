@@ -1,0 +1,61 @@
+/* Footer.css */
+
+:root {
+  --bg-color: #141414;
+  --text-color: #fff;
+  --hover-color: #e50914;
+}
+
+.footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  border-top: 1px solid #222;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  /* Optional entrance animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--hover-color);
+  text-shadow: 0 0 10px var(--hover-color);
+  transform: scale(1.15);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Responsive tweak for small devices */
+@media (max-width: 480px) {
+  .footer-icons {
+    gap: 1rem;
+  }
+}
